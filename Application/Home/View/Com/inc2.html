@@ -1,0 +1,63 @@
+<!doctype html>
+<html class="no-js">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>数据管理平台</title>
+<meta name="description" content="数据管理平台">
+<meta name="keywords" content="user">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="renderer" content="webkit">
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+<link rel="icon" type="image/png" href="__PUBLIC__/i/favicon.png">
+<link rel="apple-touch-icon-precomposed"
+	href="__PUBLIC__/i/app-icon72x72@2x.png">
+<meta name="apple-mobile-web-app-title" content="Amaze UI" />
+<link rel="stylesheet" href="__PUBLIC__/css/amazeui.min.css" />
+<link rel="stylesheet" href="__PUBLIC__/css/admin.css">
+<script src="/ucar_thinkphp/Public/js/jquery.min.js"></script>
+
+</head>
+<body>
+	<!--[if lte IE 9]>
+<p class="browsehappy">你正在使用<strong>过时</strong>的浏览器，系统 UI暂不支持。 请 <a href="http://browsehappy.com/" target="_blank">升级浏览器</a>
+  以获得更好的体验！</p>
+<![endif]-->
+
+	<header class="am-topbar am-topbar-inverse admin-header">
+		<div class="am-topbar-brand">
+			<strong>数据管理平台</strong> <small>后台管理</small>
+		</div>
+
+		<button
+			class="am-topbar-btn am-topbar-toggle am-btn am-btn-sm am-btn-success am-show-sm-only"
+			data-am-collapse="{target: '#topbar-collapse'}">
+			<span class="am-sr-only">导航切换</span> <span class="am-icon-bars"></span>
+		</button>
+
+		<div class="am-collapse am-topbar-collapse" id="topbar-collapse">
+
+			<ul
+				class="am-nav am-nav-pills am-topbar-nav am-topbar-right admin-header-list">
+				<!-- 
+					<li><a href="javascript:;"><span class="am-icon-envelope-o"></span>
+						收件箱 <span class="am-badge am-badge-warning">5</span></a></li>
+				 -->
+				<li><a href="/ucar_thinkphp/Home/Admin/query"><span
+						class="am-icon-puzzle-piece"></span>查询数据</a></li>
+				<li><a href="/ucar_thinkphp/Home/Admin/query_excel"><span
+						class="am-icon-puzzle-piece"></span>导出数据</a></li>
+			 
+				<li><a href="/ucar_thinkphp/Home/Admin/logout"><span
+						class="am-icon-sign-out"></span> 注销</a></li>
+				<li class="am-hide-sm-only"><a href="javascript:;"
+					id="admin-fullscreen"><span class="am-icon-arrows-alt"></span>
+						<span class="admin-fullText">开启全屏</span></a></li>
+			</ul>
+		</div>
+	</header>
+
+	<div class="am-cf admin-main">
+		<!-- sidebar start -->
+
+		<!-- sidebar end -->
